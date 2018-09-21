@@ -323,7 +323,7 @@ int main(int argc, char** argv)
     
     vgWriter.writeChunkedGraph(outGraph, outBases, outPaths,
                                nodeCount, edgeCount, segmentCount);
-
+    vgWriter.finish();
     //cout << *sgbuild.getSideGraph() << endl;
 
   }

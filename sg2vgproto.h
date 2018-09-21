@@ -37,6 +37,9 @@ public:
    /** init output stream and proto document */
    void init(std::ostream* os);
 
+   /** finish output stream and write EOF marker */
+   void finish();
+
    /** write nodes and edges and paths*/
    void writeGraph(const SideGraph* sg,
                    const std::vector<std::string>& bases,

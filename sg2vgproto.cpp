@@ -180,6 +180,11 @@ void SG2VGProto::writeChunkedGraph(const SideGraph* sg,
 }
 
 
+void SG2VGProto::finish()
+{
+	stream::finish(*_os);
+}
+
 void SG2VGProto::addNode(const SGSequence* seq)
 {
   Node* node = _graph.add_node();
